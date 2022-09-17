@@ -1,0 +1,23 @@
+{
+  "name": "worldplay-feedback",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.0.6",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.6.0",
+    "html-minifier": "^4.0.0",
+    "markdown-it": "^13.0.1",
+    "node-fetch": "^3.2.6",
+    "sendmail": "^1.6.1",
+    "validator": "^13.7.0",
+    "xss": "^1.0.14"
+  }
+}
