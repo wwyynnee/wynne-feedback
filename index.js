@@ -42,17 +42,15 @@ app.get("/submit", (req, res) => {
   <html>
     <head>
       <meta charset="utf-8" />
-      <meta http-equiv="refresh" content="5; URL=https://worldplay.tk/" />
-      <link rel="icon" href="https://cdn.worldplay.tk/cdn/general/favicon.ico" />
-      <link rel="stylesheet" href="https://cdn.worldplay.tk/style.css" />
+      <meta http-equiv="refresh" content="5; URL=https://wynne.tk/" />
+      <link rel="icon" href="https://wynne.tk/images/logo/icon.png" />
+      <link rel="stylesheet" href="https://wynne.tk/style.css" />
       <title>Отправлено!</title>
     </head>
     <body>
       <h1>The message has been sent. In a few seconds you will be taken to the main page</h1>
     </body>
   <html>`)
-    //res.send(xss(`Сообщение отправлено! -> Тема: ${subject} -> Имя: ${name} -> Почта: ${email} -> Сообщение: ${body}`));
-    //setTimeout(() => res.redirect("https://worldplay.tk"), 5000)
     
     var res = `
     <html lang="ru">
@@ -75,7 +73,7 @@ app.get("/submit", (req, res) => {
     </html>`;
     sendmail(
       {
-        from: "feedback@worldplay.tk",
+        from: "feedback@wynne.tk",
         to: "aleksejseryj659@yandex.ru",
         subject: subject,
         html: minify(res, {
