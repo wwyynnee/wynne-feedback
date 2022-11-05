@@ -42,13 +42,13 @@ app.get("/submit", (req, res) => {
   <html>
     <head>
       <meta charset="utf-8" />
-      <meta http-equiv="refresh" content="5; URL=https://wynne.tk/" />
+      <meta http-equiv="refresh" content="3; URL=https://wynne.tk/" />
       <link rel="icon" href="https://wynne.tk/images/logo/icon.png" />
-      <link rel="stylesheet" href="https://wynne.tk/style.css" />
+      <link rel="stylesheet" href="style.css" />
       <title>Отправлено!</title>
     </head>
     <body>
-      <h1>The message has been sent. In a few seconds you will be taken to the main page</h1>
+      <h1>Успешно отправлено!</h2>
     </body>
   <html>`)
     
@@ -57,7 +57,7 @@ app.get("/submit", (req, res) => {
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-          ${fs.readFileSync("./style.css", "utf8")}
+          ${fs.readFileSync("views/style.css", "utf8")}
         </style>
       </head>
       <body>
